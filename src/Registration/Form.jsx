@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button, Select, MenuItem, FormControl, InputLabel,FormLabel,RadioGroup,FormControlLabel,Radio
-    
- } from '@mui/material';
+import { TextField, Button, Select, MenuItem, FormControl, InputLabel,FormLabel,RadioGroup,FormControlLabel,Radio} from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 
 function Form() {
@@ -180,7 +178,9 @@ function Form() {
                     </RadioGroup>
                 </FormControl>
 
-                <button>Submit</button>
+                <button>
+                    {!loading?<p>submit</p>:<CircularProgress />}
+                </button>
             </div>
         </div>
     </div>

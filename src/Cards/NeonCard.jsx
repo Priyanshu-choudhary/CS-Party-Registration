@@ -15,7 +15,7 @@ function NeonCard() {
                 <p>Junior :</p>
             </div>
             <ul class="dress-code-list">
-                <li class="text-white font-thin bg-slate-700 px-2 rounded-sm"><span className='font-semibold'>Girls:</span> Western</li>
+                <li class="text-white font-thin bg-slate-700 px-2 rounded-sm"><span className='font-semibold'>Girls:</span> Anything(not western)</li>
                 <li class="text-white font-thin bg-slate-700 px-2 rounded-sm"><span className='font-semibold'>Boys:</span> Party wear</li>
             </ul>
             <div class="svg-card flex-none">
