@@ -23,7 +23,7 @@ function NeonCard() {
             </div>
             <ul class="dress-code-list">
                 <li class="text-white font-thin bg-slate-700 px-2 rounded-sm"><span className='font-semibold'>Girls:</span> Saree</li>
-                <li class="text-white font-thin bg-slate-700 px-2 rounded-sm"><span className='font-semibold'>Boys:</span> Suit/Blazer</li>
+                <li class="text-white font-thin bg-slate-700 px-2 rounded-sm"><span className='font-semibold'>Boys:</span> Formals</li>
             </ul>
         </div>
         <div class="card-footer">

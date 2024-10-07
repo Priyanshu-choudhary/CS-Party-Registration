@@ -19,8 +19,8 @@ function HeroPage() {
                     </p>
                     <p className="neon-text ">Date: <span className='neon-text-3 ml-5'>8 OCT 2024</span></p>
                     <p className="neon-text ">Time: <span className='neon-text-3 ml-5'>11 A.M</span></p>
-                    <p className="neon-text">Venue: <span className='neon-text-3 ml-5'>Brahaspati bhawan, CCSU</span></p>
-
+                    <p className="neon-text ">Venue: <span className='neon-text-3 ml-5'>Brahaspati Bhawan, CCSU</span></p>
+                    <p className="neon-text "></p>
                    </div>
             </section>
         </div>
