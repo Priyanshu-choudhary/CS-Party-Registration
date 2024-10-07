@@ -22,7 +22,7 @@ function App() {
         <NeonCard />
       </div>
 
-      {/* <DownloadFile/> */}
+      <DownloadFile/>
     </div>
   )
 }

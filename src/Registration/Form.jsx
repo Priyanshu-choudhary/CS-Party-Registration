@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { TextField, Button, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Form() {
+    const [loading, setLoading] = useState(false); // State for loading status
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -17,10 +20,12 @@ function Form() {
     };
 
     const handleSubmit = async (event) => {
+        setLoading(true); // Set loading to true when submitting
+
         event.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:8000/submit', {
+            const response = await fetch('http://3.104.54.235:8000/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -29,12 +34,17 @@ function Form() {
             });
 
             if (response.ok) {
-                alert('Form submitted successfully!');
+                alert('Form submitted successfully! Please check your Gmail/spam folder for the QR code.');
+            } else if (response.status === 409) {
+                alert('Email is already registered! Please check your Gmail/spam for the QR code.');
             } else {
                 alert('There was an error submitting the form.');
             }
+
         } catch (error) {
             alert('Network error: ' + error.message);
+        } finally {
+            setLoading(false); // Reset loading status
         }
     };
 
