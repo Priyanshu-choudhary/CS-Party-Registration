@@ -25,7 +25,7 @@ function Form() {
         event.preventDefault();
 
         try {
-            const response = await fetch('https://hytechlabs.online:8000/submit', {
+            const response = await fetch('https://3.104.54.235:8000/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
